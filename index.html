@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+    <h1>Quartz - Parchment - Shears</h1>
+
+    <div class="choices">
+        <button onclick="playGame('Quartz')">🪨</button>
+        <button onclick="playGame('Parchment')">📄</button>
+        <button onclick="playGame('Shears')">✂️</button>
+    </div>
+
+    <div id="playerDisplay">PLAYER: None</div>
+    <div id="computerDisplay">COMPUTER: None</div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay"> Player Score:
+        <span id="playerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay"> Computer Score:
+        <span id="computerScoreDisplay">0</span>
+    </div>
+    
+    <div class="scoreDisplay"> # of Ties:
+        <span id="tieScoreDisplay">0</span>
+    </div>
+
+    <button id="clear-btn">Clear Score</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
