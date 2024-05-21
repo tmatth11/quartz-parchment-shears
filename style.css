@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Regular Show Font Family";
+    src: url(IceCreamPartySolid.ttf);
+}
+
+body {
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: "Regular Show Font Family";
+    font-size: 3.5rem;
+    color: white;
+}
+
+.choices {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.choices button {
+    font-size: 7.5rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border-radius: 250px;
+    background-color: hsl(0, 2%, 44%);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.choices button:hover {
+    background-color: hsl(0, 2%, 54%);
+}
+
+.choices button:active {
+    background-color: hsl(0, 2%, 64%);
+}
+
+#playerDisplay {
+    margin-bottom: 30px;
+}
+
+#playerDisplay,
+#computerDisplay {
+    font-size: 2.5rem;
+    color: white;
+}
+
+#resultDisplay {
+    height: 100px;
+    font-size: 5rem;
+    margin: 30px 0;
+}
+
+.scoreDisplay {
+    font-size: 2rem;
+}
+
+#clear-btn {
+    margin-top: 1.3rem;
+    background-color: hsl(0, 100%, 50%);
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+}
+
+#clear-btn:hover {
+    background-color: hsl(0, 100%, 50%, 0.8);
+}
+
+#clear-btn:active {
+    background-color: hsl(0, 100%, 50%, 0.7);
+}
+
+.greenText,
+#playerScoreDisplay {
+    color: hsl(120, 100%, 25%);
+}
+
+.redText,
+#computerScoreDisplay {
+    color: hsl(0, 100%, 50%);
+}
+
+.blueText,
+#tieScoreDisplay {
+    color: hsl(240, 77%, 55%)
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .choices button {
+        font-size: 5rem;
+        min-width: 120px;
+    }
+
+    #playerDisplay,
+    #computerDisplay {
+        font-size: 2rem;
+    }
+
+    #resultDisplay {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .choices button {
+        font-size: 4rem;
+        min-width: 100px;
+    }
+
+    #playerDisplay,
+    #computerDisplay {
+        font-size: 1.5rem;
+    }
+
+    #resultDisplay {
+        font-size: 3rem;
+    }
+}
